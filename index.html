@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anställningsavtal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=block">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/print.css">
+    <script src="/script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <button type="button" title="Redigera" onclick="location.assign('edit.html')">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
+            </svg>
+        </button>
+        <button type="button" title="Skriv ut" onclick="print()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-printer-fill" viewBox="0 0 16 16">
+                <path d="M5 1a2 2 0 0 0-2 2v1h10V3a2 2 0 0 0-2-2H5zm6 8H5a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1z" />
+                <path d="M0 7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v-2a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2H2a2 2 0 0 1-2-2V7zm2.5 1a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" />
+            </svg>
+        </button>
+    </header>
+
+    <main>
+        <h1>Anställningsavtal</h1>
+
+        <table>
+            <tr>
+                <td>
+                    <h3>Arbetsgivare</h3>
+                    <p>
+                        <span>Learnpoint AB, 556684-6381</span>
+                        <br />
+                        <span>KIVRA: 556684-6381</span>
+                        <br />
+                        <span>106 31 Stockholm</span>
+                    </p>
+                </td>
+                <td>
+                    <h3>Arbetstagare</h3>
+                    <p>
+                        <span><span class="employee-name"></span>, <span class="employee-social-security-number"></span></span>
+                        <br />
+                        <span><span class="employee-address"></span></span>
+                        <br />
+                        <span><span class="employee-postal-number"></span> <span class="employee-city"></span></span>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Anställning</h3>
+                    <p>
+                        <span>Tillträde <span class="employment-begins"></span>.</span>
+                        <br />
+                        <span><span class="employment-type probationary">Provanställning 6 mån.</span><span class="employment-type permanent">Fast anställning.</span></span>
+                        <br />
+                        <span><span class="employment-role"></span>. Arbetsuppgifter enl policy.</span>
+                        <br />
+                        <span>Arbete på distans. Reglerat i policy.</span>
+                    </p>
+                </td>
+                <td>
+                    <h3>Arbetstid & Semester</h3>
+                    <p>
+                        <span>Heltid, 40 tim/vecka. Reglerat i policy.</span>
+                        <br />
+                        <span>Minst 30 dgr semester. Reglerat i policy.</span>
+                    </p>
+                </td>
+            </tr>
+        </table>
+
+
+        <div class="agreement-type new"></div>
+
+        <div class="agreement-type replacement">
+            <h3>Bakgrund</h3>
+            <p>Arbetstagaren har varit anställd sedan ovan angivet tillträdesdatum. Detta avtal ersätter alla tidigare avtal mellan arbetstagaren och arbetsgivaren.</p>
+        </div>
+
+
+        <h3>Lön</h3>
+        <p>
+            <span>Lön vid avtalets ingående är <span class="salary-initial-amount"></span> kr. Lönen utbetalas den 25:e varje månad till arbetstagarens konto. Lönerevision sker den 1 aug varje år enligt policy.</span>
+        </p>
+
+
+        <h3>Övertid, resor, och traktamente</h3>
+        <p>Arbetstagaren har inte rätt till övertidsersättning, resetidsersättning, eller traktamente.</p>
+
+
+        <h3>Lojalitetsplikt</h3>
+        <p>Arbetstagaren ska ägna hela sin arbetstid åt anställningen. Arbetstagaren får inte inneha någon annan anställning eller engagera sig i någon annan affärsverksamhet utan chefs godkännande. Arbetstagaren får inte engagera sig i någon verksamhet som kan inverka negativt på arbetsgivaren, varken under eller efter anställningen.</p>
+
+
+        <h3>Äganderätt</h3>
+        <p>Arbetsgivaren har exklusiva och fullständiga rättigheter till allt som arbetstagaren producerar under anställningen.</p>
+
+        
+        <h3>Sekretessförbindelse</h3>
+        <p>Arbetstagaren förbinder sig att, under och efter anställningen, iaktta fullständig tystnadsplikt angående versamhetens alla angelägenheter. Arbetstagaren skall förvara all information oåtkomlig för obehöriga och vidta skäliga åtgärder för att förhindra spridning av konfidentiell information.</p>
+
+
+        <h3>Uppsägning</h3>
+        <p>Vid uppsägning från arbetstagarens sida gäller <span class="employee-notice-period"></span> mån uppsägningstid. Vid uppsägning från arbetsgivarens sida gäller <span class="employer-notice-period"></span> mån uppsägningstid, eller den längre tid som lagen föreskriver. Arbetsgivaren har rätt att arbetsbefria arbetstagaren under uppsägningstiden. I samband med uppsägning skall arbetstagaren återlämna allt som tillhör arbetsgivaren.</p>
+
+
+        <h3>Policys</h3>
+        <p>Utlägg, pensioner, utbildningar, försäkringar, och andra förhållanden finns reglerade i verksamhetens policys. Arbetstagaren förbinder sig att följa och hålla sig uppdaterad kring dessa policys. Arbetsgivaren har ensidig rätt att besluta om ändringar av policys.</p>
+
+    </main>
+</body>
+
+</html>

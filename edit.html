@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" class="form">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anställningsavtal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=block">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/print.css">
+    <script src="/script.js"></script>
+</head>
+
+<body>
+
+    <header class="edit">
+        <button type="button" onclick="location.assign('/')">Avbryt</button>
+        <button type="button" onclick="exampleForm();" class="DANGER">Exempeldata</button>
+        <button type="button" onclick="clearForm();" class="DANGER">Rensa</button>
+        <button type="button" onclick="saveForm();" class="PRIMARY">Spara</button>
+    </header>
+
+    <form>
+
+        <h2>Avtalsform</h2>
+
+        <label class="radio-input">
+            <input type="radio" name="agreement-type" class="agreement-type" value="new">
+            <span>Nytt avtal</span>
+        </label>
+
+        <label class="radio-input">
+            <input type="radio" name="agreement-type" class="agreement-type" value="replacement">
+            <span>Ersätter tidigare avtal</span>
+        </label>
+
+
+        <h2>Anställningsform</h2>
+
+        <label class="radio-input">
+            <input type="radio" name="employment-type" class="employment-type" value="permanent">
+            <span>Fast anställning</span>
+        </label>
+
+        <label class="radio-input">
+            <input type="radio" name="employment-type" class="employment-type" value="probationary">
+            <span>Provanställning 6 mån</span>
+        </label>
+
+
+        <h2>Arbetstagare</h2>
+
+        <label>
+            <span>Namn</span>
+            <input type="text" class="employee-name">
+        </label>
+
+        <label>
+            <span>Personnummer</span>
+            <input type="text" class="employee-social-security-number">
+        </label>
+
+        <label>
+            <span>Adress</span>
+            <input type="text" class="employee-address">
+        </label>
+
+        <label>
+            <span>Postnummer</span>
+            <input type="text" class="employee-postal-number">
+        </label>
+
+        <label>
+            <span>Ort</span>
+            <input type="text" class="employee-city">
+        </label>
+
+
+        <h2>Anställning</h2>
+
+        <label>
+            <span>Tillträde</span>
+            <input type="text" class="employment-begins">
+        </label>
+
+        <label>
+            <span>Roll</span>
+            <input type="text" class="employment-role">
+        </label>
+
+
+        <h2>Lön</h2>
+
+        <label>
+            <span>Lön vid avtalets ingående</span>
+            <input type="text" class="salary-initial-amount">
+        </label>
+
+
+        <h2>Uppsägning</h2>
+
+        <label>
+            <span>Arbetstagarens uppsägningstid (mån)</span>
+            <input type="text" class="employee-notice-period">
+        </label>
+
+        <label>
+            <span>Arbetsgivarens uppsägningstid (mån)</span>
+            <input type="text" class="employer-notice-period">
+        </label>
+
+    </form>
+</body>
+
+</html>

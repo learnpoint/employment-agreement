@@ -1,0 +1,347 @@
+/* ==========================================================================
+   Box Sizing
+   ========================================================================== */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+
+
+/* ==========================================================================
+   HTML
+   ========================================================================== */
+
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0;
+    font-family: 'Roboto Slab', serif;
+    font-size: 12px;
+}
+
+html.print {
+    background-color: #fff;
+}
+
+html.form {
+    font-size: 14px;
+    background-color: #f3f3f3;
+}
+
+
+
+/* ==========================================================================
+   BODY
+   ========================================================================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+
+header {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #005cbd;
+    height: 56px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.print header {
+    display: none;
+}
+
+
+
+/* ==========================================================================
+   HEADER BUTTON
+   ========================================================================== */
+
+header button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 50%;
+    transition: background-color .16s, opacity .1s;
+}
+
+header button:hover {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+header button:active {
+    opacity: .6;
+}
+
+header button svg {
+    width: 18px;
+    height: 18px;
+}
+
+
+
+/* ==========================================================================
+   HEADER.edit BUTTON
+   ========================================================================== */
+
+header.edit button {
+    cursor: pointer;
+    font-weight: 600;
+    padding: 10px 12px;
+    width: auto;
+    height: auto;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+header.edit button:hover {
+    background-color: rgba(255, 255, 255, 0.16);
+}
+
+header.edit button:active {
+    opacity: .7;
+}
+
+
+
+/* ==========================================================================
+   Main
+   ========================================================================== */
+
+main {
+    background-color: #fff;
+    width: 784px;
+    min-height: 1100px;
+    margin: 86px auto 32px;
+    padding: 64px;
+    border-radius: 2px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, .4);
+}
+
+.print main {
+    width: unset;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+
+
+/* ==========================================================================
+   H1
+   ========================================================================== */
+
+h1 {
+    text-align: center;
+    margin: 0 0 32px;
+    font-size: 32px;
+}
+
+
+
+/* ==========================================================================
+   H3
+   ========================================================================== */
+
+h3 {
+    margin-bottom: 0;
+    margin: 24px 0 3px;
+    font-size: inherit;
+}
+
+
+
+/* ==========================================================================
+   Table
+   ========================================================================== */
+
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+td {
+    vertical-align: top;
+    padding: 0;
+}
+
+
+
+/* ==========================================================================
+   P
+   ========================================================================== */
+
+p {
+    margin: 0;
+}
+
+
+
+/* ==========================================================================
+   FORM
+   ========================================================================== */
+
+form {
+    display: block;
+    max-width: 480px;
+    margin: 112px auto 32px;
+    padding: 0 8px 64px;
+    font-family: -apple-system, "Segoe UI", Helvetica, sans-serif;
+}
+
+
+
+/* ==========================================================================
+   FORM H2
+   ========================================================================== */
+
+form h2 {
+    margin: 2em 0 .8em;
+    font-size: 1.2em;
+}
+
+
+
+/* ==========================================================================
+   FORM LABEL
+   ========================================================================== */
+
+form label {
+    display: block;
+    margin-bottom: 1.5em;
+}
+
+form label.radio-input {
+    margin-bottom: .2em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+
+/* ==========================================================================
+   FORM LABEL SPAN
+   ========================================================================== */
+
+form label span {
+    display: block;
+    font-weight: 600;
+    padding: 0 0 .2em .3em;
+}
+
+form label.radio-input span {
+    display: inline-block;
+    padding: 0;
+    font-weight: normal;
+}
+
+
+
+/* ==========================================================================
+   FORM TEXT INPUT
+   ========================================================================== */
+
+input[type=text] {
+    font: inherit;
+    font-family: monospace;
+    width: 100%;
+    appearance: none;
+    padding: 10px 9px;
+    border-radius: 4px;
+    border: 1px solid #d0d0d0;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border-color: #0780ff;
+    outline: 0;
+    box-shadow: 0 0 3px rgba(7, 128, 255, 1);
+}
+
+input[type=text]::placeholder {
+    color: #bbb;
+    font-style: italic;
+}
+
+
+
+/* ==========================================================================
+   FORM RADIO INPUT
+   ========================================================================== */
+
+input[type=radio] {
+    transform: scale(1.2);
+}
+
+
+
+/* ==========================================================================
+   FORM BUTTONS
+   ========================================================================== */
+
+form .buttons {
+    display: flex;
+    margin-top: 48px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* ==========================================================================
+   FORM BUTTON
+   ========================================================================== */
+
+form button {
+    appearance: none;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    font: inherit;
+    font-weight: 600;
+    padding: 8px 16px 9px;
+    border-radius: 6px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .26);
+    transition: opacity .1s;
+}
+
+form button:active {
+    opacity: .6;
+}
+
+form button.PRIMARY {
+    background-color: #0074ee;
+    color: #fff;
+    box-shadow: none;
+}
+
+form button.DANGER {
+    background-color: #e61313;
+    color: #fff;
+    box-shadow: none;
+}
